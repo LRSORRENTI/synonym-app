@@ -24,7 +24,7 @@ body {
   font-style: normal;
 }
 
-h1 {
+/* h1 {
   border: 1.4px solid var(--mint);
   max-width: 200px;
   text-align: center;
@@ -38,4 +38,4 @@ h1 {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -10px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   font-weight: lighter;
-}
+} */
