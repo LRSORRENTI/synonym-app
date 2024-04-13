@@ -1,8 +1,15 @@
 :root {
+  --mint: #98eecc;
   --spearmint-green: #76c7c0; /* A refreshing spearmint green */
   --light-mint: #a4dede; /* A lighter shade of mint */
   --mint-cream: #f1fff0; /* A soft, creamy white with a hint of green */
   --pure-white: #ffffff; /* Pure white for contrast */
+}
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 * {
@@ -10,8 +17,15 @@
   padding: 0;
 }
 
+body {
+  background-color: var(--pure-white);
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
 h1 {
-  border: 2px solid var(--light-mint);
+  border: 1.4px solid var(--mint);
   max-width: 200px;
   text-align: center;
   display: flex;
@@ -21,7 +35,7 @@ h1 {
   margin-top: 50px;
   border-radius: 4px;
   color: rgb(123, 130, 137);
-  font-weight: 100;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -10px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  font-weight: lighter;
 }
