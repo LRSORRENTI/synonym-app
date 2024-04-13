@@ -1,0 +1,27 @@
+:root {
+  --spearmint-green: #76c7c0; /* A refreshing spearmint green */
+  --light-mint: #a4dede; /* A lighter shade of mint */
+  --mint-cream: #f1fff0; /* A soft, creamy white with a hint of green */
+  --pure-white: #ffffff; /* Pure white for contrast */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  border: 2px solid var(--light-mint);
+  max-width: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  margin-top: 50px;
+  border-radius: 4px;
+  color: rgb(123, 130, 137);
+  font-weight: 100;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
