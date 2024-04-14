@@ -63,12 +63,15 @@ const renderWords = (wordsArr) => {
 };
 const copyWordList = () => {
     if (!wordsNotFound) {
-        let words = (wordListContainer.textContent).split(" ");
-        // removing the empty string element from the array
-        let filteredWords = words.filter(word => word.length !== 0);
-        // console.log(filteredWords);
-        let wordToCopy = filteredWords.join(", ");
-        navigator.clipboard.writeText(wordToCopy);
+        // This will get all the span elements with the class 'word-item', ensuring only the text content of those elements is copied.
+        let wordItems = wordListContainer.querySelectorAll('.word-item');
+        let words = Array.from(wordItems).map(item => item.textContent.trim());
+        let wordToCopy = words.join(", ");
+        navigator.clipboard.writeText(wordToCopy).then(() => {
+            console.log('Words copied to clipboard successfully.');
+        }, err => {
+            console.error('Could not copy words to clipboard: ', err);
+        });
     }
     else {
         console.log("Nothing to copy");
