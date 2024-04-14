@@ -49,9 +49,16 @@ button {
   background-color: var(--spearmint-green);
 }
 
+.word-app-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .word-app-header-title {
   color: var(--spearmint-green);
-  text-shadow: 1px 1px rgba(127, 127, 127, 0.807);
+  /* text-shadow: 1px 1px rgba(127, 127, 127, 0.807); */
+  font-weight: 300;
 }
 
 .word-app-header-title i {
@@ -59,25 +66,49 @@ button {
 }
 
 .word-app-header-title span {
-    font-size: 2.6rem;
+  font-size: 2.6rem;
 }
 
 .word-app-header-link {
-    color: var(--spearmint-green);
-    font-weight: 900;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-} 
-
-.word-app-header-link:hover {
-    color: var(--light-mint);
-    transition: 0.3s ease;
+  color: var(--spearmint-green);
+  font-weight: 300;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  background-color: var(--mint-cream);
+  display: inline-block;
+  padding: 1rem 1.6rem;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -10px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  font-size: 2rem;
 }
 
-.word-app-header-content {
+.word-app-header-link:hover {
+  color: var(--light-mint);
+  transition: 0.3s ease;
+  box-shadow: none;
+}
+
+.word-app-searchbox {
+  margin-top: 3rem;
+}
+
+.word-app-searchbox-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-element {
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--mint-cream);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -10px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding: 1rem 2rem;
+  border-radius: 10px;
 }
 
 /* h1 {
