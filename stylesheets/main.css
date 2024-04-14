@@ -111,6 +111,26 @@ button {
   border-radius: 10px;
 }
 
+.form-icon,
+#submit-btn {
+  font-size: 2.4rem;
+  margin: 0 1.6rem;
+  color: var(--spearmint-green);
+}
+.form-input::placeholder {
+  color: var(--spearmint-green);
+}
+
+.form-input {
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  border: 1px solid var(--light-mint);
+  outline: 0;
+  color: var(--spearmint-green);
+  border-radius: 10px;
+  width: 100%;
+}
+
 /* h1 {
   border: 1.4px solid var(--light-mint);
   max-width: 200px;
