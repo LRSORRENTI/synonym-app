@@ -28,8 +28,28 @@ const fetchSynWords = (searchWord) => __awaiter(void 0, void 0, void 0, function
     try {
         loadingSpinner.style.display = "flex";
         let res = yield fetch(url);
-        let;
+        let fetchedData = yield res.json();
+        loadingSpinner.style.display = "none";
+        // console.log(fetchedData);
+        renderWords(fetchedData);
     }
-    finally {
+    catch (err) {
+        console.log(err);
+        console.error(err);
     }
 });
+const renderWords = (wordsArr) => {
+    let htmlCode;
+    if (wordsArr.length > 0) {
+        wordsNotFound = false;
+        htmlCode = wordsArr.map(word => {
+            return `<span class="word-item">${word.word}</span>`;
+        });
+        wordListContainer.innerHTML = htmlCode.join("");
+    }
+    else {
+        htmlCode = "no results found";
+        wordListContainer.innerHTML = htmlCode;
+    }
+    wordAppBody.style.display = "block";
+};
