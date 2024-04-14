@@ -1,6 +1,6 @@
-const wordSearchForm = document.getElementById('word-search-form');
+const wordSearchForm = document.getElementById('word-search-form') as HTMLFormElement;;
 const copyBtn = document.getElementById('copy-btn');
-const wordAppBody = document.querySelector('.word-app-body');
+const wordAppBody = document.querySelector('.word-app-body') as HTMLElement;
 const wordListContainer = document.getElementById('word-list');
 const loadingSpinner = document.getElementById('spinner');
 
@@ -18,7 +18,7 @@ const getInputWord = () => {
 
 getInputWord()
 
-const fetchSynWords = async (searchWord) => {
+const fetchSynWords = async (searchWord: string) => {
     console.log(searchWord)
     let url = `https://api.datamuse.com/words?rel_syn=${searchWord}`
     try {
@@ -45,11 +45,17 @@ const fetchSynWords = async (searchWord) => {
     }
 };
 
-const renderWords = (wordsArr) => {
+interface WordItem {
+    word: string;
+    score: number;
+}
+
+
+const renderWords = (wordsArr: WordItem[]) => {
     let htmlCode;
     if(wordsArr.length > 0) {
         wordsNotFound = false;
-        htmlCode = wordsArr.map(word => {
+        htmlCode = wordsArr.map(word=> {
             return `<span class="word-item">${word.word}</span>`;
         });
         wordListContainer!.innerHTML! = htmlCode.join("");
@@ -64,8 +70,8 @@ const renderWords = (wordsArr) => {
 const copyWordList = () => {
     if(!wordsNotFound){
         // This will get all the span elements with the class 'word-item', ensuring only the text content of those elements is copied.
-        let wordItems = wordListContainer.querySelectorAll('.word-item');
-        let words = Array.from(wordItems).map(item => item.textContent.trim());
+        let wordItems = wordListContainer!.querySelectorAll('.word-item');
+        let words = Array.from(wordItems).map(item => item.textContent!.trim());
         let wordToCopy = words.join(", ");
         navigator.clipboard.writeText(wordToCopy).then(() => {
             console.log('Words copied to clipboard successfully.');

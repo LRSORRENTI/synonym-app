@@ -9,6 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 const wordSearchForm = document.getElementById('word-search-form');
+;
 const copyBtn = document.getElementById('copy-btn');
 const wordAppBody = document.querySelector('.word-app-body');
 const wordListContainer = document.getElementById('word-list');
