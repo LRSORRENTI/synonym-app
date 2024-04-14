@@ -44,6 +44,42 @@ button {
   padding: 2rem;
 }
 
+.word-app-header {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--spearmint-green);
+}
+
+.word-app-header-title {
+  color: var(--spearmint-green);
+  text-shadow: 1px 1px rgba(127, 127, 127, 0.807);
+}
+
+.word-app-header-title i {
+  color: var(--spearmint-green);
+}
+
+.word-app-header-title span {
+    font-size: 2.6rem;
+}
+
+.word-app-header-link {
+    color: var(--spearmint-green);
+    font-weight: 900;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+} 
+
+.word-app-header-link:hover {
+    color: var(--light-mint);
+    transition: 0.3s ease;
+}
+
+.word-app-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* h1 {
   border: 1.4px solid var(--light-mint);
   max-width: 200px;
