@@ -1,6 +1,6 @@
 :root {
   --mint: #98eecc;
-  --spearmint-green: rgb(118, 199, 192); /* A refreshing spearmint green */
+  --spearmint-green: #76c7c0; /* A refreshing spearmint green */
   --light-mint: #a4dede; /* A lighter shade of mint */
   --mint-cream: #f1fff0; /* A soft, creamy white with a hint of green */
   --pure-white: #ffffff; /* Pure white for contrast */
@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-  border: 1.4px solid var(--mint);
+  border: 1.4px solid var(--light-mint);
   max-width: 200px;
   text-align: center;
   display: flex;
@@ -46,5 +46,5 @@ span {
 }
 
 #fasearch {
-  color: var(--mint);
+  color: var(--light-mint);
 }
