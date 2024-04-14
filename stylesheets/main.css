@@ -1,6 +1,6 @@
 :root {
   --mint: #98eecc;
-  --spearmint-green: #76c7c0; /* A refreshing spearmint green */
+  --spearmint-green: rgb(118, 199, 192); /* A refreshing spearmint green */
   --light-mint: #a4dede; /* A lighter shade of mint */
   --mint-cream: #f1fff0; /* A soft, creamy white with a hint of green */
   --pure-white: #ffffff; /* Pure white for contrast */
@@ -21,10 +21,9 @@ body {
   background-color: var(--pure-white);
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  font-style: normal;
 }
 
-/* h1 {
+h1 {
   border: 1.4px solid var(--mint);
   max-width: 200px;
   text-align: center;
@@ -38,4 +37,14 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -10px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   font-weight: lighter;
-} */
+  text-shadow: 1px 1px 2px rgba(118, 199, 192, 0.807);
+}
+
+span {
+  font-family: "Roboto";
+  font-weight: 100;
+}
+
+#fasearch {
+  color: var(--mint);
+}
