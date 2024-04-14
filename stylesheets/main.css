@@ -84,10 +84,9 @@ button {
 }
 
 .word-app-header-link:hover {
-  /* color: var(--light-mint); */
-  transition: 0.3s ease;
   box-shadow: none;
   background-color: var(--pure-white);
+  transition: 0.2s ease-in;
 }
 
 .word-app-searchbox {
@@ -183,6 +182,7 @@ button {
 #copy-btn:hover {
   background-color: var(--pure-white);
   box-shadow: none;
+  transition: 0.2s ease-in;
 }
 
 #spinner {
