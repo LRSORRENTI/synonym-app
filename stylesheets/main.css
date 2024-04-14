@@ -76,7 +76,7 @@ button {
   transition: 0.3s ease-in-out;
   background-color: var(--mint-cream);
   display: inline-block;
-  padding: 1rem 1.6rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -10px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -84,9 +84,10 @@ button {
 }
 
 .word-app-header-link:hover {
-  color: var(--light-mint);
+  /* color: var(--light-mint); */
   transition: 0.3s ease;
   box-shadow: none;
+  background-color: var(--pure-white);
 }
 
 .word-app-searchbox {
@@ -170,6 +171,35 @@ button {
   background-color: var(--mint-cream);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -10px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: var(--transition);
+}
+#copy-btn:hover {
+  background-color: var(--pure-white);
+  box-shadow: none;
+}
+
+#spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .word-app-header-link {
+    display: block;
+    padding: 1rem 1.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .word-app-header-link {
+    display: block;
+  }
+  .form-input {
+    transition: 2s ease-in-out;
+    min-width: 480px;
+  }
 }
 
 /* h1 {
