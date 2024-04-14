@@ -4,6 +4,7 @@
   --light-mint: #a4dede; /* A lighter shade of mint */
   --mint-cream: #f1fff0; /* A soft, creamy white with a hint of green */
   --pure-white: #ffffff; /* Pure white for contrast */
+  --transition: all 0.3s ease-in-out;
 }
 
 .roboto-thin {
@@ -15,15 +16,35 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
 }
 
 body {
-  background-color: var(--pure-white);
+  background-color: #efefee;
+  /* background-color: var(--pure-white); */
   font-family: "Roboto", sans-serif;
   font-weight: 100;
+  font-size: 1.6rem;
 }
 
-h1 {
+button {
+  border: none;
+  outline: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* h1 {
   border: 1.4px solid var(--light-mint);
   max-width: 200px;
   text-align: center;
@@ -48,3 +69,4 @@ span {
 #fasearch {
   color: var(--light-mint);
 }
+ */
